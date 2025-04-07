@@ -72,6 +72,7 @@ header,
 }
 
 .header__logo a:hover {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -117,6 +118,16 @@ header,
   padding: 7px;
   padding-left: 40px;
   border-radius: 5px;
+  outline: none;
+}
+
+.header__search:focus {
+  border-color: hotpink;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: hotpink;
 }
 
 .header__btn {
@@ -130,6 +141,10 @@ header,
   height: 100%;
   object-fit: contain;
   background: none;
+}
+
+.header__btn:hover {
+  color: hotpink;
 }
 
 .header__btn:hover {
@@ -150,6 +165,10 @@ header,
   row-gap: 50px;
   padding: 0 5px;
   margin-bottom: 50px;
+}
+
+.footer a:not(.footer_col3__items_btn):hover {
+  color: hotpink;
 }
 
 .footer section h3 {
@@ -176,7 +195,7 @@ header,
 
 .footer_col2 a:hover {
   text-decoration: underline;
-  text-decoration-color: rgba(128, 128, 128, 0.53);
+  text-decoration-color: hotpink;
   text-decoration-thickness: 2px;
 }
 
@@ -200,7 +219,7 @@ header,
 
 .footer_col1__inputs input[type="text"]:focus {
   background-color: rgb(232, 232, 232);
-  border: 1px solid red;
+  border: 1px solid hotpink;
   outline: none;
 }
 
@@ -218,11 +237,10 @@ header,
   display: flex;
   justify-content: center;
   gap: 20px;
-  color: red;
 }
 
 .footer_col1__socials a:hover {
-  color: red;
+  color: hotpink;
 }
 
 .footer_col3__items a {
@@ -242,12 +260,13 @@ header,
 }
 
 .footer_col3__items_btn:hover {
-  background-color: rgba(0, 0, 0, 0.132);
+  background-color: hotpink;
+  color: black;
 }
 
 .footer_col3__items_link:hover {
   text-decoration: underline;
-  text-decoration-color: gray;
+  text-decoration-color: hotpink;
 }
 
 .footer_col3__items_category {
@@ -259,7 +278,6 @@ header,
   align-items: center;
   margin-top: 10px;
   column-gap: 2px;
-  
 }
 
 .footer_col3__items_payment_methods a:hover {
