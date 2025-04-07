@@ -14,7 +14,8 @@
 .section_important_products__left_link:hover,
 .section_products_special .item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.342) inset, 0 0 10px rgba(0, 0, 0, 0.342);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.342) inset, 0 0 10px rgba(0, 0, 0, 0.342); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.41);
 }
 
 .section_important_products__left {
@@ -51,6 +52,10 @@
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+}
+
+.section_products{
+  padding: 20px;
 }
 
 .section_products_item {
@@ -106,17 +111,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px 10px;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 .section_products_special .item {
-  width: 100%;
-  max-width: 200px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  width: 100%;
+  max-width: 300px;
 }
 
 .section_products_special .item:hover p {
@@ -125,7 +131,6 @@
 
 .section_products_special img {
   width: 100%;
-  height: 80%;
   object-fit: cover;
   margin: 0;
   padding: 0;
@@ -149,6 +154,10 @@
   .section_important_products__right {
     width: 100%;
     gap: 0;
+    padding: 0;
+  }
+
+  .section_products {
     padding: 0;
   }
 
